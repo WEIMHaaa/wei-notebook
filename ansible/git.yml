@@ -1,0 +1,15 @@
+#ansible-playbook git.yml
+#ansible git模块：从远程仓库下载项目
+
+- name: "git clone"
+  hosts: localhost
+  vars:
+    git_dir: /deploy_demo/
+
+  tasks:
+    - name: "Clone the Git repo"
+      git:
+        repo: 'git@github.com:WEIMHaaa/Learn-Java.git'
+        dest: '{{ git_dir }}'
+        clone: yes
+        update: yes

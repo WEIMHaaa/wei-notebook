@@ -1,0 +1,5 @@
+#数据库连接
+jdbc.url=jdbc:mysql://127.0.0.1:3306/demo?characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;zeroDateTimeBehavior=convertToNull
+jdbc.driverClass=com.mysql.jdbc.Driver
+jdbc.user=root
+jdbc.password=root

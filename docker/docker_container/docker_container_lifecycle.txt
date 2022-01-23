@@ -1,0 +1,46 @@
+#1、docker run：启动容器
+docker run -d \
+--name mysql \
+-p 3306:3306 \
+-v /usr/local/docker/mysql/config/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf \
+-v /usr/local/docker/mysql/data/mysql:/var/lib/mysql \
+-e MYSQL_ROOT_PASSWORD=123456 \
+mysql:5.7
+
+#2、docker start <容器名称>：启动容器
+docker start mysql
+
+#3、docker stop <容器名称>：停止容器
+docker stop mysql
+
+#4、docker restart <容器名称>：重启容器
+docker restart mysql
+
+#5、docker kill <容器名称>：杀掉运行中的容器
+docker kill -s KILL mysql
+
+#6、docker rm ：删除一个或多个容器rm -f <容器名称>
+#强制删除容器 db01、db02：
+docker rm -f db01 db02
+
+#移除容器nginx01对容器db01的连接,连接名db：
+docker rm -l db
+
+#删除容器nginx01,并删除容器挂载的数据卷：
+docker rm -v nginx01
+
+#删除所有已经停止的容器(-q：只展示容器ID)：
+docker rm $(docker ps -a -q)
+
+#7、docker pause/unpause：暂停/恢复容器
+#暂停数据库容器db01提供服务：
+docker pause db01
+
+#恢复数据库容器db01提供服务：
+docker unpause db01
+
+#8、docker create：创建容器但是不启动
+docker create --name demo01 nginx:latest 
+
+#9、docker exec：在运行的容器中执行命令 (查看容器ID：docker ps -a)
+docker exec -it <容器ID> /bin/bash

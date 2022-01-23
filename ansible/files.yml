@@ -1,0 +1,11 @@
+#ansible-playbook files.yaml --extra-vars "deploy_user_name=user_name deploy_service_name=demo uid=666 deploy_user_group=group_name"
+#ansible file模块：创建目录，将目录设置所属人和所属组
+
+- name: "mkdir file"
+- hosts: localhost
+  tasks:
+  - name: create deploy directory
+    file: path={{ item }} state=directory owner={{ deploy_user_name }} group={{ deploy_user_group }} recurse=yes
+    with_items:
+    - "/tmp/{{ deploy_user_name }}/{{ deploy_service_name }}/logs"
+    - "/tmp/{{ deploy_user_name }}/{{ deploy_service_name }}/bin"

@@ -1,0 +1,17 @@
+一、相关资源
+若依平台：
+演示地址：http://vue.ruoyi.vip
+文档地址：http://doc.ruoyi.vip
+
+SpringBoot教程1：
+https://blog.didispace.com/spring-boot-learning-2x/
+https://gitee.com/didispace/SpringBoot-Learning/
+
+SpringBoot教程2：
+https://gitee.com/xkcoding/spring-boot-demo?_from=gitee_search#spring-boot-demo
+
+SpringBoot教程3：
+https://gitee.com/roncoocom/spring-boot-demo
+
+element-ui组件：
+https://element.eleme.cn/#/zh-CN/component/installation

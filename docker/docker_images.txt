@@ -1,0 +1,39 @@
+#1、docker login/logout 
+#登陆到Docker Hub
+docker login -u 用户名 -p 密码
+
+#登出Docker Hub
+docker logout
+
+#2、docker pull
+#从Docker Hub下载java最新版镜像
+docker pull java
+
+#从Docker Hub下载REPOSITORY为java的所有镜像
+docker pull -a java
+
+#3、将本地的镜像上传到镜像仓库,要先登陆到镜像仓库docker push
+docker push myapache:v1
+
+#4、docker search：从Docker Hub查找镜像
+#从Docker Hub查找所有镜像名包含java,并且收藏数大于10的镜像
+docker search -f stars=10 java
+
+#5、docker images：列出本地镜像
+#列出本地镜像中REPOSITORY为ubuntu的镜像列表
+docker images ubuntu
+
+#6、docker rmi:删除本地一个或多少镜像
+docker rmi -f nginx:latest
+
+#7、docker tag：标记本地镜像,将其归入某一仓库
+docker tag redis:alpine redis:v1
+
+#8、docker history：查看指定镜像的创建历史
+docker history redis:alpine
+
+#9、docker save：将指定镜像保存成tar归档文件。
+docker save -o redis_latest.tar redis:alpine
+
+#10、docker load：导入使用 docker save 命令导出的镜像。
+docker load < redis_latest.tar

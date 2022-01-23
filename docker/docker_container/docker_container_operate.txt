@@ -1,0 +1,42 @@
+#1、docker ps：列出容器 
+#STATUS: 容器状态,7种：
+#created（已创建）
+#restarting（重启中）
+#running（运行中）
+#removing（迁移中）
+#paused（暂停）
+#exited（停止）
+#dead（死亡）
+#列出所有容器
+docker ps
+
+#列出最近创建的5个容器信息
+docker ps -n 5
+
+#列出所有创建的容器ID
+docker ps -a -q
+
+#2、docker inspect：获取容器/镜像的元数据 
+#获取镜像mysql:5.7的元信息
+docker inspect mysql:5.7
+
+#获取正在运行的容器mysql的IP
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mysql
+
+#3、查看容器中运行的进程信息,支持ps命令参数 docker top
+#查看容器mysql的进程信息
+docker top mysql
+
+#查看所有运行容器的进程信息。
+for i in  `docker ps |grep Up|awk '{print $1}'`;do echo \ &&docker top $i; done
+
+#4、docker logs：获取容器日志
+#获取容器mysql的日志
+docker logs mysql
+
+#5、docker export：将文件系统作为一个tar归档文件导出到STDOUT 
+docker export -o mysql-`date +%Y%m%d`.tar f41012e358a9
+
+#6、docker port：查看容器端口 
+#查看容器mysql端口
+docker port mysql

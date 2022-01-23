@@ -1,0 +1,111 @@
+#!/bin/bash
+action=$1
+target=$2
+args=$@
+
+MS_BASE=/opt/
+COMPOSE_FILES=$(cat ${MS_BASE}/metersphere/compose_files)
+export COMPOSE_HTTP_TIMEOUT=180
+
+function usage() {
+   echo "MeterSphere 控制脚本"
+   echo
+   echo "Usage: "
+   echo "  ./msctl.sh [COMMAND] [ARGS...]"
+   echo "  ./msctl.sh --help"
+   echo
+   echo "Commands: "
+   echo "  status    查看 MeterSphere 服务运行状态"
+   echo "  start     启动 MeterSphere 服务"
+   echo "  stop      停止 MeterSphere 服务"
+   echo "  restart   重启 MeterSphere 服务"
+   echo "  reload    重新加载 MeterSphere 服务"
+   echo "  upgrade   升级 MeterSphere 至最新版本"
+   echo "  uninstall 卸载 MeterSphere 服务"
+   echo "  version   查看 MeterSphere 版本信息"
+}
+
+function status() {
+   echo
+   cd ${MS_BASE}/metersphere; docker-compose ${COMPOSE_FILES} ps
+}
+function start() {
+   echo
+   cd ${MS_BASE}/metersphere; docker-compose ${COMPOSE_FILES} start ${target}
+}
+function stop() {
+   echo
+   cd ${MS_BASE}/metersphere; docker-compose ${COMPOSE_FILES} stop ${target}
+}
+function restart() {
+   echo
+   cd ${MS_BASE}/metersphere; docker-compose ${COMPOSE_FILES} restart ${target}
+}
+function reload() {
+   echo
+   cd ${MS_BASE}/metersphere; docker-compose ${COMPOSE_FILES} up -d
+}
+function uninstall() {
+   echo
+   cd ${MS_BASE}/metersphere; docker-compose ${COMPOSE_FILES} down ${target}
+}
+function version() {
+   echo
+   cat ${MS_BASE}/metersphere/version
+}
+function upgrade() {
+   os=`uname -a`
+   if [[ $os =~ 'Darwin' ]];then
+      MSVERSION=$(curl -s https://github.com/metersphere/metersphere/releases/latest |grep -Eo 'v[0-9]+.[0-9]+.[0-9]+')
+   else
+      MSVERSION=$(curl -s https://github.com/metersphere/metersphere/releases/latest/download 2>&1 | grep -Po 'v[0-9]+\.[0-9]+\.[0-9]+.*(?=")')
+   fi
+
+   wget --no-check-certificate https://github.com/metersphere/metersphere/releases/latest/download/metersphere-release-${MSVERSION}.tar.gz -O /tmp/metersphere-release-${MSVERSION}.tar.gz
+   cd /tmp;tar zxvf metersphere-release-${MSVERSION}.tar.gz
+   cd metersphere-release-${MSVERSION}
+
+   cat ${MS_BASE}/metersphere/.env >> install.conf
+   sed -i -e "s#MS_TAG=.*#MS_TAG=${MSVERSION}#g" install.conf
+   sed -i -e "s#MS_PREFIX=.*#MS_PREFIX=registry.cn-qingdao.aliyuncs.com\/metersphere#g" install.conf
+   /bin/bash install.sh
+   rm -rf /tmp/metersphere-release-${MSVERSION}
+}
+
+function main() {
+    case "${action}" in
+      status)
+         status
+         ;;
+      start)
+         start
+         ;;
+      stop)
+         stop
+         ;;
+      restart)
+         restart
+         ;;
+      reload)
+         reload
+         ;;
+      upgrade)
+         upgrade
+         ;;
+      uninstall)
+         uninstall
+         ;;
+      version)
+         version
+         ;;
+      help)
+         usage
+         ;;
+      --help)
+         usage
+         ;;
+      *)
+         echo "不支持的参数，请使用 help 或 --help 参数获取帮助"
+    esac
+}
+main

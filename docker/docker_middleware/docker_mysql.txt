@@ -1,0 +1,43 @@
+#下载mysql镜像
+docker pull mysql:5.7
+
+# 将容器中的 mysql 配置文件复制到宿主机中指定路径下，路径你可以根据需要，自行修改
+docker cp mysql:/etc/mysql/mysql.conf.d/mysqld.cnf /usr/local/docker/mysql/config
+# 将容器中的 mysql 存储目录复制到宿主机中
+docker cp mysql:/var/lib/mysql/ /usr/local/docker/mysql/data
+
+-v /usr/local/docker/mysql/config/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf: 
+将容器中 /etc/mysql/mysql.conf.d/mysqld.cnf 配置文件挂载到宿主机的 /usr/local/docker/mysql/config/mysqld.cnf 文件上；
+-v /usr/local/docker/mysql/data:/var/lib/mysql: 
+将容器中 /var/lib/mysql 数据目录挂载到宿主机的 /usr/local/docker/mysql/data 目录下；
+
+docker run -d \
+--name mysql \
+-p 3306:3306 \
+-v /usr/local/docker/mysql/config/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf \
+-v /usr/local/docker/mysql/data/mysql:/var/lib/mysql \
+-e MYSQL_ROOT_PASSWORD=123456 \
+mysql:5.7
+
+#进入mysql容器
+docker exec -it mysql /bin/bash
+
+#连接数据库
+mysql -uroot -p123456
+
+use mysql;
+alter user 'root'@'%' identified with mysql_native_password by '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
+flush privileges;
+select host,user,plugin,authentication_string from mysql.user;
+
+#添加远程登录用户
+CREATE USER 'test'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'test'@'%';
+
+#获取容器内部IP地址 127.0.0.1
+docker inspect [容器名称|ID] |grep IPAddress
+docker inspect mysql |grep IPAddress
+
+docker inspect --format='{{.NetworkSettings.IPAddress}}' [容器名称|ID]
+docker inspect --format='{{.NetworkSettings.IPAddress}}' mysql

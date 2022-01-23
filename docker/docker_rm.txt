@@ -1,0 +1,24 @@
+#stop停止所有容器
+docker stop $(docker ps -a -q)
+
+#start启动容器<容器ID>
+docker start e5ee4a252828
+
+#remove删除所有容器
+docker rm $(docker ps -a -q) 
+
+#删除所有停止的容器
+docker container prune
+
+#删除所有的镜像
+docker rmi $(docker images -q)
+
+#删除所有无名称的镜像（悬空镜像） -f：强制删除
+docker rmi -f $(docker images -f "dangling=true" -q)
+
+#根据容器的状态,删除Exited状态的容器
+docker rm $(sudo docker ps -qf status=exited)
+
+#通过docker images MySQL -q查询出 MySQL 的所有镜像 id，-q表示仅查询 id，并将这些 id 作为参数传递给docker rmi -f指令，这样所有的 MySQL 镜像就都被删除了
+docker rmi -f $(docker images MySQL -q)
+docker rmi -f $(docker images jly-sso-oms -q)

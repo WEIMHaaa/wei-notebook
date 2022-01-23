@@ -1,0 +1,48 @@
+#ps：列出所有运行容器
+docker-compose ps
+
+#logs：查看服务日志输出
+docker-compose logs
+
+#port：打印绑定的公共端口，下面命令可以输出eureka服务8761端口所绑定的公共端口
+docker-compose port eureka 8761
+
+#build：构建或者重新构建服务
+docker-compose build
+
+#start：启动指定服务已存在的容器
+docker-compose start eureka
+
+#stop：停止已运行的服务的容器
+docker-compose stop eureka
+
+#rm：删除指定服务的容器
+docker-compose rm eureka
+
+#up：构建、启动容器
+docker-compose up
+
+#-d：后台运行
+docker-compose up -d
+
+#stop：停止容器
+docker-compose stop
+
+#kill：通过发送SIGKILL信号来停止指定服务的容器
+docker-compose kill eureka
+
+#pull：下载服务镜像
+
+#scale：设置指定服务运行容器的个数，以 service=num 形式指定
+docker-compose scale user=3 movie=3
+
+#run：在一个服务上执行一个命令
+docker-compose run web bash
+
+#测试是否安装成功
+docker-compose --version
+
+#查看docker镜像
+docker images
+
+#docker挂载目录后无权限访问目录，原因是docker创建目录默认用户id是1000，需在宿主机创建一个用户id和组id为1000的用户才行

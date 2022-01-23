@@ -1,0 +1,22 @@
+rootfs：Root File System
+
+#1、docker commit：从容器创建一个新的镜像 
+#将容器a404c6c174a2 保存为新的镜像,并添加提交人信息和说明信息
+runoob@runoob:~$ docker commit -a "runoob.com" -m "my apache" a404c6c174a2  mymysql:v1
+-a :提交的镜像作者；
+-c :使用Dockerfile指令来创建镜像；
+-m :提交时的说明文字；
+-p :在commit时，将容器暂停。
+
+#2、docker cp：用于容器与主机之间的数据拷贝 
+#将主机/www/runoob目录拷贝到容器96f7f14e99ab的/www目录下
+docker cp /www/runoob 96f7f14e99ab:/www/
+
+#将主机/www/runoob目录拷贝到容器96f7f14e99ab中，目录重命名为www
+docker cp /www/runoob 96f7f14e99ab:/www
+
+#将容器96f7f14e99ab的/www目录拷贝到主机的/tmp目录中
+docker cp 96f7f14e99ab:/www /tmp/
+
+#3、docker diff：检查容器里文件结构的更改 
+docker diff mysql

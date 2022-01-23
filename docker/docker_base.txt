@@ -1,0 +1,63 @@
+
+#1、安装docker
+#检查内核版本，必须是3.10及以上; uname ‐r查看内核版本,如果不是需要yum update升级软件包
+yum install docker
+
+#2.1、检查docker是否安装成功
+docker -v
+docker run hello-world
+
+#3.1、启动docker
+service docker start
+#3.2、开机启动docker
+systemctl enable docker
+
+#4.1、设置从ustc拉取镜像
+vim /etc/docker/daemon.json
+{
+ "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn"]
+}
+#4.2、需要重启docker服务
+systemctl restart docker.service
+systemctl restart docker
+
+#5.1、查看正在运行的容器
+docker ps
+#5.2、查看所有容器
+docker ps -a
+
+#6.1、安装Tomcat
+#以守护进程后台方式启动容器：docker run -d --name 容器名称 镜像
+#访问地址：http://127.0.0.1:8888/ (ens33)
+docker search tomcat                                       #搜索tomcat
+docker pull tomcat                                         #拉取tomcat镜像
+docker run -d --name mytomcat -p 8888:8080 tomcat:latest   #启动tomcat容器，并做端口映射
+docker ps
+#6.2、进入tomcat容器
+docker exec -it 837b8ca7683b /bin/bash
+#6.3、无法访问Tomcat 注：ll无法使用，只能使用ls
+#访问问不到主页的原因是因为存放主页的文件夹webapps是空的,docker的tomcat将这些文件放在了webapps.dist文件夹中,只需要将空的webapps文件夹删除,然后将 webapps.dist重命名为webapps就可以了
+
+#7、查看docker镜像
+docker images
+
+#8、查看docker系统信息
+docker info
+
+#9、停止docker
+systemctl stop docker
+
+#10、删除镜像/容器等
+rm -rf /var/lib/docker
+
+#11、daemon
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+"registry-mirrors": ["https://3c9p0sot.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+

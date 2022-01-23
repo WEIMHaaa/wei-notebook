@@ -1,0 +1,21 @@
+#ansible-playbook synchronize.yml --extra-vars "hosts=jenkins-node" #注: delete: yes 先清空再同步
+#ansible synchronize模块：同步文件
+
+- name: "synchronize files"
+  hosts: '{{ hosts }}'
+  tasks:
+  - name: synchronize files1
+    synchronize:
+      src: '{{ item.src }}'
+      dest: '{{ item.dest }}'
+      delete: yes
+    with_items:
+    - { src: '/tmp/backup/', dest: '/tmp/backup/' }
+
+  - name: synchronize files2
+      synchronize:
+        src: '{{ item.src }}'
+        dest: '{{ item.dest }}'
+        delete: yes
+      with_items:
+        - { src: '/tmp/{{ codeName }}/', dest: '/tmp/{{ codeName }}/' }

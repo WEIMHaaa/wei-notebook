@@ -1,0 +1,14 @@
+msctl
+echo "  status    查看 MeterSphere 服务运行状态"
+echo "  start     启动 MeterSphere 服务"
+echo "  stop      停止 MeterSphere 服务"
+echo "  restart   重启 MeterSphere 服务"
+echo "  reload    重新加载 MeterSphere 服务"
+echo "  upgrade   升级 MeterSphere 至最新版本"
+echo "  uninstall 卸载 MeterSphere 服务"
+echo "  version   查看 MeterSphere 版本信息"
+
+
+地址: http://127.0.0.1:8081/
+用户名: admin
+密码: metersphere

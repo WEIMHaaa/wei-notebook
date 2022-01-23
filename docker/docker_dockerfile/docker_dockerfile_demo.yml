@@ -1,0 +1,27 @@
+FROM                        java:openjdk-8-jre
+
+ENV BITBUCKET_HOME          /var/atlassian/application-data/bitbucket
+ENV BITBUCKET_INSTALL_DIR   /opt/atlassian/bitbucket
+ENV BITBUCKET_VERSION       4.12.0
+ENV DOWNLOAD_URL            https://downloads.atlassian.com/software/stash/downloads/atlassian-bitbucket-${BITBUCKET_VERSION}.tar.g
+ARG user=bitbucket
+ARG group=bitbucket
+ARG uid=1000
+ARG gid=100
+RUN mkdir -p $(dirname $BITBUCKET_HOME) \
+&& groupadd -g ${gid} ${group} \
+&& useradd -d "$BITBUCKET_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
+RUN mkdir -p                                ${BITBUCKET_HOME} \
+&& mkdir -p                             ${BITBUCKET_HOME}/shared \
+&& chmod -R 700                         ${BITBUCKET_HOME} \
+&& chown -R ${user}:${group}            ${BITBUCKET_HOME} \
+&& mkdir -p                             ${BITBUCKET_INSTALL_DIR}/conf/Catalina \
+&& curl -L --silent                     ${DOWNLOAD_URL} | tar -xz --strip=1 -C "$BITBUCKET_INSTALL_DIR" \
+&& chmod -R 700                         ${BITBUCKET_INSTALL_DIR}/ \
+&& chown -R ${user}:${group}            ${BITBUCKET_INSTALL_DIR}
+${BITBUCKET_INSTALL_DIR}/bin/setenv.s
+USER        ${user}:${group
+EXPOSE      7990
+EXPOSE      799
+WORKDIR     $BITBUCKET_INSTALL_DIR
+CMD         ["bin/start-bitbucket.sh", "-fg"]

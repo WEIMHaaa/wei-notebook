@@ -1,0 +1,5 @@
+#重启Harbor：
+cd /usr/local/harbor && docker-compose up -d  
+
+#注：得先进入到有docker-compose.yml才能执行docker-compose ps
+cd /usr/local/harbor && docker-compose ps
