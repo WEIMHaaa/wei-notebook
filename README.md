@@ -35,7 +35,8 @@
   - [【Jenkins系列】如何构建Jenkins Job](https://mp.weixin.qq.com/s/sYMobgHghGe0JTvlYAPPNQ)
   - [【Jenkins系列】什么是pipeline](https://mp.weixin.qq.com/s/VLmBT6fbW_poOg6fb8YwVg)
   - [【Jenkins系列】自动化构建](https://mp.weixin.qq.com/s/y5DcJ6zPEfqpF3ZXzFwuNg)
-
+- shell系列
+  - [【shell系列】环境管理必备工具shell](https://mp.weixin.qq.com/s/j2IAM1sIGz7-9bRNqx5-jg)
 - 笔记总结
   - [【笔记总结】我是如何做笔记的](https://mp.weixin.qq.com/s/UVPVRU7t6Vzx3y_3iDC5sg)
 
