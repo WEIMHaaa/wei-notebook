@@ -41,6 +41,7 @@
   - [【笔记总结】我是如何做笔记的](https://mp.weixin.qq.com/s/UVPVRU7t6Vzx3y_3iDC5sg)
 
 - 查看日志
+  - [【查看日志】教你查看日志的N种方式](https://mp.weixin.qq.com/s/XIWUnQIs3JuIGWyhdqznEw)
   - [【查看日志】一文详解cdlog](https://mp.weixin.qq.com/s/G8q_nwYTJaYxxAikcNROMQ)
 
 - 接口测试
