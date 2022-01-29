@@ -35,8 +35,14 @@
   - [【Jenkins系列】如何构建Jenkins Job](https://mp.weixin.qq.com/s/sYMobgHghGe0JTvlYAPPNQ)
   - [【Jenkins系列】什么是pipeline](https://mp.weixin.qq.com/s/VLmBT6fbW_poOg6fb8YwVg)
   - [【Jenkins系列】自动化构建](https://mp.weixin.qq.com/s/y5DcJ6zPEfqpF3ZXzFwuNg)
+
+- Redis系列
+  - [【Redis系列】Java使用Redis](https://mp.weixin.qq.com/s/lXCxdE9lEah9XautS315vQ)
+  - [【Redis系列】一文带你入门Redis](https://mp.weixin.qq.com/s/zLfHWg4xEd75rB12GOUcMg)
+
 - shell系列
   - [【shell系列】环境管理必备工具shell](https://mp.weixin.qq.com/s/j2IAM1sIGz7-9bRNqx5-jg)
+
 - 笔记总结
   - [【笔记总结】我是如何做笔记的](https://mp.weixin.qq.com/s/UVPVRU7t6Vzx3y_3iDC5sg)
 
@@ -82,6 +88,9 @@
 
 - 抓包工具
   - [【抓包工具】whistle入门](https://mp.weixin.qq.com/s/44Va8lN28qqrZvcrbe91eg)
+
+- 自动化测试
+  - [【自动化测试】是否有必要做自动化测试？](https://mp.weixin.qq.com/s/9k_LcRxp-fpttS6wI58bYA)
 
 - 自动化运维
   - [【自动化运维】带你入门ansible](https://mp.weixin.qq.com/s/owCkdZDgIKzGFe4FIHiYhA)  
