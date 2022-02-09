@@ -41,6 +41,9 @@
 - [【Jenkins系列】什么是pipeline](https://mp.weixin.qq.com/s/VLmBT6fbW_poOg6fb8YwVg)
 - [【Jenkins系列】自动化构建](https://mp.weixin.qq.com/s/y5DcJ6zPEfqpF3ZXzFwuNg)
 
+#### Linux系列
+- [【Linux系列】三剑客awk，sed，grep](https://mp.weixin.qq.com/s/9tmR_UxUcaJ1LK2rOlIGrw)
+
 #### Redis系列
 - [【Redis系列】Java使用Redis](https://mp.weixin.qq.com/s/lXCxdE9lEah9XautS315vQ)
 - [【Redis系列】一文带你入门Redis](https://mp.weixin.qq.com/s/zLfHWg4xEd75rB12GOUcMg)
@@ -61,6 +64,9 @@
 - [【接口测试】神器JMeter](https://mp.weixin.qq.com/s/mFjg3Spwv2snsz-12yQ08A)
 - [【接口测试】JMeter参数化](https://mp.weixin.qq.com/s/8LMlc54lmdlrcUGOPIyIHw)
 
+#### 金融风控
+- [【金融风控】风控基础总结](https://mp.weixin.qq.com/s/NoDITA9TtOePzR-KGCIGBQ)
+
 #### 面试总结
 - [【面试总结】这个调整，我花了2年时间......](https://mp.weixin.qq.com/s/MtnQ9qJoB_Okg1LSrHH79A)
 
@@ -72,6 +78,7 @@
 - [【数据库系列】你想要的sql全都有plus](https://mp.weixin.qq.com/s/_uTqNUzs4ebEB-JVBplXHA)
 - [【数据库系列】Elasticsearch基本操作](https://mp.weixin.qq.com/s/n5N0gFeUatirur_AxW2p8Q)
 - [【数据库系列】Elasticsearch入门](https://mp.weixin.qq.com/s/5PWsTGEafyJY1C43fsYWWA)
+- [【数据库系列】隔离级别会造成我转账1个亿丢失吗？](https://mp.weixin.qq.com/s/MxUj7mFThT_qRuKCR8hjMA)
 - [【数据库系列】环境治理之同步数据库](https://mp.weixin.qq.com/s/gefcEFnYDH4iWNsvKXG4DQ)
 
 #### 碎碎念
