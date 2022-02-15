@@ -107,6 +107,7 @@
 
 #### 自动化测试
   - [【自动化测试】是否有必要做自动化测试？](https://mp.weixin.qq.com/s/9k_LcRxp-fpttS6wI58bYA)  
+  - [【自动化测试】一站式测试平台MeterSphere实践感悟分享](https://mp.weixin.qq.com/s/7lIXh-w01mPxx-RKLNG9NA)  
 
 #### 自动化运维
   - [【自动化运维】从0到1 CICD自动化部署落地分享](https://mp.weixin.qq.com/s/cd-eCw3lot0NuRY56wuflQ)
