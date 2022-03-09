@@ -70,8 +70,10 @@
 #### 金融风控
   - [【金融风控】风控基础总结](https://mp.weixin.qq.com/s/NoDITA9TtOePzR-KGCIGBQ)  
 
-#### 面试总结
-  - [【面试总结】这个调整，我花了2年时间......](https://mp.weixin.qq.com/s/MtnQ9qJoB_Okg1LSrHH79A)  
+#### 面试系列
+  - [【面试系列】你是如何做接口测试的？](https://mp.weixin.qq.com/s/d5mQpyiA98I1axTzGOIaPQ)
+  - [【面试系列】如果你是测试Leader，你会怎么做？](https://mp.weixin.qq.com/s/kGaEWd1u09uLD2Mu_akIsA)
+  - [【面试系列】这个调整，我花了2年时间......](https://mp.weixin.qq.com/s/MtnQ9qJoB_Okg1LSrHH79A)
 
 #### 软件测试点
   - [【软件测试点】一切都在细节中](https://mp.weixin.qq.com/s/GJkXOB9i0sE8VKc6z-e_2g)  
