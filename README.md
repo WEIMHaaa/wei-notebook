@@ -5,6 +5,9 @@
 - Learn-Java
   - https://github.com/WEIMHaaa/Learn-Java.git  
   - https://gitee.com/weimenghua/Learn-Java.git
+- Learn-Python
+  - https://github.com/WEIMHaaa/Learn-Python.git
+  - https://gitee.com/weimenghua/Learn-Python.git
 - wei-notebook
   - https://github.com/WEIMHaaa/wei-notebook.git
   - https://gitee.com/weimenghua/wei-notebook.git  
@@ -26,6 +29,7 @@
   - [【Docker系列】我的Docker入门历程](https://mp.weixin.qq.com/s/qDLcyNlg5XzOteW9M1b_vw)  
 
 #### Dubbo系列
+  - [【Dubbo系列】Dubbo是啥？RPC又是啥？](https://mp.weixin.qq.com/s/I3qOFitAFhdD8GKw-YXy7A)
   - [【Dubbo系列】命令行调用dubbo接口](https://mp.weixin.qq.com/s/guMigJE7vYMGkDgPOQq1Aw)  
 
 #### Git系列
