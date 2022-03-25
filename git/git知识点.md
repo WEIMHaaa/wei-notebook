@@ -1,0 +1,17 @@
+1. repository
+2. config
+3. init
+4. clone
+5. fetch
+6. pull
+7. commit
+8. push
+9. branch
+10. head
+11. tag
+12. merge
+13. conflict
+14. diff
+15. log
+16. show
+17. status
