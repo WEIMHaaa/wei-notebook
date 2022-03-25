@@ -3,8 +3,8 @@
 yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel
 
 # 2、下载并解压nginx到/usr/local/ngnix/
-## 1.1、下载nginx
-方式一：官网下载：http://nginx.org/en/download.html
+## 2.1、下载nginx
+方式一：官网下载：http://nginx.org/en/download.html  
 方式二：wget http://nginx.org/download/nginx-1.13.7.tar.gz
 
 ## 2.1、解压tar包到/usr/local/nginx/目录下
