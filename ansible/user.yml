@@ -1,14 +1,13 @@
-#ansible-playbook user.yaml --extra-vars "user=user_name uid=666 group=group_name"
-#ansible user模块：创建用户|创建用户组
+#ansible user模块：创建目录，将目录设置所属人和所属组
+#执行命令：ansible-playbook user.yaml --extra-vars "user=myname uid=666 group=mygroup"
 
-- name: "create user"
 - hosts: localhost
   tasks:
     - name: create deploy user
       user:
-        name: "{{ user }}" #定义对象
-        uid: "{{ uid }}"
+        name: "{{user}}" #定义对象
+        uid: "{{uid}}"
         append: yes
-        group: "{{ group }}"
+        group: "{{group}}"
         state: present
-        home: "/tmp/{{ user }}"
+        home: "/tmp/{{user}}"
