@@ -1,5 +1,5 @@
-#ansible-playbook git.yml
 #ansible git模块：从远程仓库下载项目
+#ansible-playbook git.yml
 
 - name: "git clone"
   hosts: localhost
