@@ -67,6 +67,7 @@
 
 #### 接口测试
   - [【接口测试】JMeter接口关联测试](https://mp.weixin.qq.com/s/Daf2zhY4yVPBK9_Wo27vbg)  
+  - [【接口测试】JMeter连接MySQL](https://mp.weixin.qq.com/s/11mYbCpCH0su4aOGa2aHIA)  
   - [【接口测试】JMeter强化神器beanshell](https://mp.weixin.qq.com/s/DKPtUf7M42h4-It2yURPpA)  
   - [【接口测试】神器JMeter](https://mp.weixin.qq.com/s/mFjg3Spwv2snsz-12yQ08A)  
   - [【接口测试】JMeter参数化](https://mp.weixin.qq.com/s/8LMlc54lmdlrcUGOPIyIHw)  
