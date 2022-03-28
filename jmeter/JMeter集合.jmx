@@ -251,7 +251,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="mysql连接" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="mysql连接" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -277,18 +277,18 @@
           <boolProp name="keepAlive">true</boolProp>
           <stringProp name="connectionAge">5000</stringProp>
           <stringProp name="checkQuery"></stringProp>
-          <stringProp name="dbUrl">jdbc:mysql://127.0.0.1:3306/demo?allowMultiQueries=true&amp;useUnicode=true&amp;serverTimezone=GMT</stringProp>
+          <stringProp name="dbUrl">jdbc:mysql://127.0.0.1:3306/dbname?allowMultiQueries=true&amp;useUnicode=true&amp;serverTimezone=GMT</stringProp>
           <stringProp name="driver">com.mysql.cj.jdbc.Driver</stringProp>
           <stringProp name="username">root</stringProp>
           <stringProp name="password">root</stringProp>
           <stringProp name="connectionProperties"></stringProp>
         </JDBCDataSource>
         <hashTree/>
-        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC操作数据库" enabled="true">
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC请求" enabled="true">
           <stringProp name="dataSource">jdbcdemo</stringProp>
           <stringProp name="queryType">Callable Statement</stringProp>
-          <stringProp name="query">select * from demo.`table1`;
-select id, name, age, create_time from demo.`table1`;</stringProp>
+          <stringProp name="query">select * from dbname.`t_table_info`;
+select id, name, age, create_time from dbname.`t_table_info`;</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="variableNames">id, name, age, create_time</stringProp>
@@ -307,7 +307,7 @@ select id, name, age, create_time from demo.`table1`;</stringProp>
           <boolProp name="CounterConfig.per_user">false</boolProp>
         </CounterConfig>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="JDBC获取数据测试" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="JDBC验证数据" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1322,7 +1322,7 @@ log.info(&quot;机关：&quot; + issueOrg);</stringProp>
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="测试接口" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="测试接口" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
