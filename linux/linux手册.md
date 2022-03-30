@@ -62,3 +62,27 @@ for value in "${demo_array[@]}"
 do  
 echo "${value}"  
 done  
+
+创建一个指向文件或目录的软链接  
+ln -s file1 lnk1   
+
+举例：在目标文件所在路径下：ln -s 源文件或目录 目标文件或目录(lnk1|目标文件或目录件：无需新建)  
+ln -s /data/.jenkins/bak_workspace bak_jenkins_workspace  
+
+创建一个指向文件或目录的物理链接  
+ln file1 lnk1   
+
+2>&1 重定向  
+nohup command>/dev/null 2>&1 &  
+- nohup 表示当前用户和系统的会话下的进程忽略响应HUP消息，也就是不挂断地运行命令
+- /dev/null 表示空设备文件
+- 0 表示stdin标准输入
+- 1 表示stdout标准输出
+- 2 表示stderr标准错误
+- & 表示把该命令以后台的job的形式运行
+
+shell反斜杠拼成一行  
+./configure \  
+–prefix=/usr \  
+–sbin-path=/usr/sbin/nginx \  
+–conf-path=/etc/nginx/nginx.conf \

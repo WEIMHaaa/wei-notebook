@@ -1,5 +1,12 @@
 #数据库连接
+#mysql驱动
 jdbc.url=jdbc:mysql://127.0.0.1:3306/demo?characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;zeroDateTimeBehavior=convertToNull
 jdbc.driverClass=com.mysql.jdbc.Driver
+jdbc.user=root
+jdbc.password=root
+
+#hive驱动(下载地址：https://github.com/timveil/hive-jdbc-uber-jar/releases/download/v1.9-2.6.5/hive-jdbc-uber-2.6.5.0-292.jar)
+jdbc.url=jdbc:hive2://{host}[:{port}][/{database}]
+jdbc.driverClass=org.apache.hive.jdbc.HiveDriver
 jdbc.user=root
 jdbc.password=root
