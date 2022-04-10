@@ -1,6 +1,7 @@
 <h1 align = "center">好好学习, 天天向上</h1>
 这是一个努力在建设自己人生体系的呱呱大王，包含但不局限于测试体系，知识体系，笔记体系等。带你见证呱呱本呱成长为参天大呱。  
 
+
 ## 1、项目地址
 - Learn-Java
   - https://github.com/WEIMHaaa/Learn-Java.git  
@@ -12,12 +13,20 @@
   - https://github.com/WEIMHaaa/wei-notebook.git
   - https://gitee.com/weimenghua/wei-notebook.git  
 
-## 2、测试体系
+  
+## 2、测试体系建设
 在线地址：[测试体系建设](https://www.processon.com/view/link/615eae81e0b34d06f3dcdf4b)  
-本地文件：[./docs/测试体系建设.xmind](./docs/测试体系建设.xmind) 
+本地文件：[./docs/测试体系建设.xmind](./docs/测试体系建设.xmind)  
 ![](./docs/测试体系建设.jpg)  
 
-## 3、公众号
+
+## 3、质量保障体系建设
+在线地址：[质量保障体系建设](https://www.processon.com/view/link/62526ac61efad407891c5dd5)  
+本地文件：[./docs/质量保障体系建设.pdf](./docs/质量保障体系建设.pdf)
+![](./docs/质量保障体系建设.png)
+
+
+## 4、公众号
 ### 嘎嘎软件测试
 ![](./docs/嘎嘎软件测试.png)  
 
@@ -46,10 +55,10 @@
   - [【Jenkins系列】自动化构建](https://mp.weixin.qq.com/s/y5DcJ6zPEfqpF3ZXzFwuNg)  
 
 #### Linux系列
-- [【Linux系列】三剑客awk，sed，grep](https://mp.weixin.qq.com/s/9tmR_UxUcaJ1LK2rOlIGrw)  
+  - [【Linux系列】三剑客awk，sed，grep](https://mp.weixin.qq.com/s/9tmR_UxUcaJ1LK2rOlIGrw)  
 
 #### Python系列
-- [【Python系列】pytest自动化测试框架](https://mp.weixin.qq.com/s/dKgvH8igE9sjtsu91hxpdw)  
+  - [【Python系列】pytest自动化测试框架](https://mp.weixin.qq.com/s/dKgvH8igE9sjtsu91hxpdw)  
 
 #### Redis系列
   - [【Redis系列】Java使用Redis](https://mp.weixin.qq.com/s/lXCxdE9lEah9XautS315vQ)  
@@ -67,7 +76,7 @@
 
 #### 接口测试
   - [【接口测试】JMeter接口关联测试](https://mp.weixin.qq.com/s/Daf2zhY4yVPBK9_Wo27vbg)  
-  - [【接口测试】JMeter连接MySQL](https://mp.weixin.qq.com/s/11mYbCpCH0su4aOGa2aHIA)  
+  - [【接口测试】JMeter连接MySQL](https://mp.weixin.qq.com/s/11mYbCpCH0su4aOGa2aHIA)
   - [【接口测试】JMeter强化神器beanshell](https://mp.weixin.qq.com/s/DKPtUf7M42h4-It2yURPpA)  
   - [【接口测试】神器JMeter](https://mp.weixin.qq.com/s/mFjg3Spwv2snsz-12yQ08A)  
   - [【接口测试】JMeter参数化](https://mp.weixin.qq.com/s/8LMlc54lmdlrcUGOPIyIHw)  
@@ -78,7 +87,8 @@
 #### 面试系列
   - [【面试系列】你是如何做接口测试的？](https://mp.weixin.qq.com/s/d5mQpyiA98I1axTzGOIaPQ)
   - [【面试系列】如果你是测试Leader，你会怎么做？](https://mp.weixin.qq.com/s/kGaEWd1u09uLD2Mu_akIsA)
-  - [【面试系列】这个调整，我花了2年时间......](https://mp.weixin.qq.com/s/MtnQ9qJoB_Okg1LSrHH79A)
+  - [【面试系列】如何保障质量之测试左移右移](https://mp.weixin.qq.com/s/nbE16LyZtrKq3lla5VxM7Q)
+  - [【面试系列】这个调整，我花了2年时间......](https://mp.weixin.qq.com/s/MtnQ9qJoB_Okg1LSrHH79A)  
 
 #### 软件测试点
   - [【软件测试点】一切都在细节中](https://mp.weixin.qq.com/s/GJkXOB9i0sE8VKc6z-e_2g)  
@@ -113,7 +123,7 @@
   - [【抓包工具】whistle入门](https://mp.weixin.qq.com/s/44Va8lN28qqrZvcrbe91eg)  
 
 #### 自动化测试
-  - [【自动化测试】是否有必要做自动化测试？](https://mp.weixin.qq.com/s/9k_LcRxp-fpttS6wI58bYA)  
+  - [【自动化测试】是否有必要做自动化测试？](https://mp.weixin.qq.com/s/9k_LcRxp-fpttS6wI58bYA) 
   - [【自动化测试】一站式测试平台MeterSphere实践感悟分享](https://mp.weixin.qq.com/s/7lIXh-w01mPxx-RKLNG9NA)  
 
 #### 自动化运维
