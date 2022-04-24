@@ -34,6 +34,11 @@ for i in  `docker ps |grep Up|awk '{print $1}'`;do echo \ &&docker top $i; done
 #4、docker logs：获取容器日志
 #获取容器mysql的日志
 docker logs mysql
+docker logs -f --tail=10 <容器ID>
+docker logs -f --tail=10 $(docker ps |grep -v pause |grep 应用名称 |awk -F " " '{print $1}')
+
+docker exec -it <容器ID> /bin/bash
+docker exec -it $(docker ps |grep -v pause |grep 应用名称 |awk -F " " '{print $1}') /bin/bash
 
 #5、docker export：将文件系统作为一个tar归档文件导出到STDOUT 
 docker export -o mysql-`date +%Y%m%d`.tar f41012e358a9
