@@ -1,0 +1,248 @@
+D:\software\IdeaProjects\wei-notebook
+├─目录结构.txt
+├─tmp
+|  ├─app_build.sh
+|  ├─deploy.sh
+|  ├─tmp.sh
+|  └tmp.txt
+├─pipeline
+|    ├─agent.groovy
+|    ├─deploy_demo.groovy
+|    ├─environment.groovy
+|    ├─input.groovy
+|    ├─options.groovy
+|    ├─parallel.groovy
+|    ├─parameters.groovy
+|    ├─pipeline.groovy
+|    ├─pipeline_demo.groovy
+|    ├─pipeline_learn.md
+|    ├─post.groovy
+|    ├─printenv.groovy
+|    ├─script.groovy
+|    ├─stages.groovy
+|    ├─steps.groovy
+|    ├─switch.groovy
+|    ├─tools.groovy
+|    ├─triggers.groovy
+|    ├─var.groovy
+|    └when.groovy
+├─mixinfo
+|    ├─CICD.md
+|    ├─cmd手册.md
+|    ├─Markdwon教程.md
+|    ├─Maven.md
+|    ├─两地三中心.md
+|    ├─云计算.md
+|    ├─分布式集群.md
+|    ├─埋点测试.md
+|    ├─如何定位前后端问题.md
+|    ├─混沌工程.md
+|    ├─灰度测试.md
+|    ├─热备冷备双活.md
+|    ├─网站可用性（HA）.md
+|    ├─metersphere
+|    |      ├─install.conf
+|    |      ├─install.sh
+|    |      ├─Jenkinsfile
+|    |      ├─metersphere.txt
+|    |      ├─msctl
+|    |      └quick_start.sh
+|    ├─jly_script
+|    |     ├─new_project_deploy
+|    |     |         ├─new_project_core.yml
+|    |     |         ├─new_project_jenkins_module.sh
+|    |     |         └new_project_oms.yml
+|    |     ├─deploy_script
+|    |     |       ├─app_build.sh
+|    |     |       ├─aut_deploy.sh
+|    |     |       └deploy.sh
+├─middleware
+|     ├─zookeeper
+|     |     ├─zkCli客户端.md
+|     |     ├─zookeeper安装.md
+|     |     └注册中心的调用过程.md
+|     ├─rocketmq
+|     |    └消息队列.md
+|     ├─redis
+|     |   ├─redis数据类型.md
+|     |   └Redis的RDB和AOF持久化.md
+|     ├─nodejs
+|     |   └nodejs安装.md
+|     ├─nginx
+|     |   ├─nginx安装.md
+|     |   ├─nginx常用命令.md
+|     |   └正向代理和反向代理.md
+|     ├─kafka
+|     |   └kafka安装.md
+|     ├─dubbo
+|     |   ├─dubbo-telnet.md
+|     |   ├─dubbo简介.md
+|     |   └dubbo配置说明.md
+├─linux
+|   ├─linux手册.md
+|   ├─查看日志.txt
+|   ├─shell
+|   |   ├─add_file_prefix.sh
+|   |   ├─add_user.sh
+|   |   ├─app_dingtalk.sh
+|   |   ├─app_dingtalk_demo.sh
+|   |   ├─app_status_notice_mail.sh
+|   |   ├─auto_restart_app.sh
+|   |   ├─case_demo.sh
+|   |   ├─cdlog_bash.sh
+|   |   ├─change_nginx_cfg.sh
+|   |   ├─check_exist_keywords.sh
+|   |   ├─check_exist_user.sh
+|   |   ├─check_snapshot.sh
+|   |   ├─color.sh
+|   |   ├─date.sh
+|   |   ├─deldisk.sh
+|   |   ├─demo.txt
+|   |   ├─for.sh
+|   |   ├─Inspection.sh
+|   |   ├─is_success.sh
+|   |   ├─linux_info.sh
+|   |   ├─linux_infov2.sh
+|   |   ├─mail.properties
+|   |   ├─min_max.sh
+|   |   ├─read_txt.sh
+|   |   ├─start_milddle.sh
+|   |   └time.sh
+|   ├─command
+|   |    ├─curl.sh
+|   |    ├─df.sh
+|   |    ├─find.sh
+|   |    ├─linux_command.sh
+|   |    ├─log.sh
+|   |    ├─lsof_netstat.sh
+|   |    ├─mkdir.sh
+|   |    ├─ps.sh
+|   |    ├─rsync.sh
+|   |    ├─scp.sh
+|   |    ├─sed.sh
+|   |    ├─ssh.sh
+|   |    ├─tar_unzip.sh
+|   |    ├─tcpdump.sh
+|   |    └wget.sh
+├─kubernetes
+|     └k8s手册.md
+├─jmeter
+|   ├─beanshell-baseInfo.sh
+|   ├─beanshell-random.txt
+|   ├─jmeter.bat - 快捷方式.lnk
+|   ├─JMeter集合.jmx
+|   ├─文件上传
+|   |  ├─JMeterCSV.csv
+|   |  └JMeterCSV.xlsx
+|   ├─jar包
+|   |  ├─java-generator-1.1.0.jar
+|   |  ├─java-generator.jar
+|   |  ├─jmeter-plugins-dubbo-2.7.12-jar-with-dependencies.jar
+|   |  ├─jmeter-plugins-dubbo-2.7.4-jar-with-dependencies.jar
+|   |  ├─jmeter-plugins-dubbo-2.7.7-jar-with-dependencies.jar
+|   |  ├─jmeter-plugins-dubbo-2.7.8-jar-with-dependencies.jar
+|   |  ├─JMeterPlugins-Standard.jar
+|   |  ├─mysql-connector-java-5.1.38.jar
+|   |  └mysql-connector-java-8.0.19.jar
+├─jenkins
+|    ├─jenkins图谱.png
+|    ├─jenkins手册.md
+|    ├─jenkins配置.md
+|    ├─sonar_demo.groovy
+|    ├─sonar安装配置流程.md
+|    ├─synchronize_jenkins_config.sh
+|    └synchronize_jenkins_config.yml
+├─git
+|  ├─commit规范.md
+|  └git知识点.md
+├─docs
+|  ├─嘎嘎软件测试.png
+|  ├─测试体系建设.jpg
+|  ├─测试体系建设.xmind
+|  ├─综合信息.md
+|  ├─质量保障体系建设.png
+|  ├─软件测试点.png
+|  ├─软件测试点.xmind
+|  ├─图片
+|  | ├─微信截图1.bmp
+|  | ├─微信截图2.png
+|  | ├─微信截图3.jpg
+|  | ├─微信截图4.jpeg
+|  | └桌面背景.png
+|  ├─word
+|  |  ├─word1.docx
+|  |  ├─word2.docx
+|  |  └word3.docx
+|  ├─pdf
+|  |  └这是一个神奇的PDF.pdf
+|  ├─files
+|  |   └sql执行计划explain.png
+├─docker
+|   ├─docker_base.txt
+|   ├─docker_harbor.txt
+|   ├─docker_images.txt
+|   ├─docker_rm.txt
+|   ├─jly_docker
+|   |     ├─注意点.txt
+|   |     ├─docker
+|   |     |   ├─docker_app_build.sh
+|   |     |   ├─docker_deploy.sh
+|   |     |   ├─other.sh
+|   |     |   ├─start_core.sh
+|   |     |   ├─start_oms.sh
+|   |     |   ├─oms_dockerfile
+|   |     |   |       └Dockerfile
+|   |     |   ├─core_dockerfile
+|   |     |   |        └Dockerfile
+|   ├─docker_middleware
+|   |         ├─docker_mysql.txt
+|   |         └docker_redis.txt
+|   ├─docker_dockerfile
+|   |         ├─docker_dockerfile.txt
+|   |         └docker_dockerfile_demo.yml
+|   ├─docker_container
+|   |        ├─docker_container_lifecycle.txt
+|   |        ├─docker_container_operate.txt
+|   |        └docker_container_rootfs.txt
+|   ├─docker_compose_metersphere
+|   |             ├─compose_files
+|   |             ├─docker-compose-base.yml
+|   |             ├─docker-compose-kafka.yml
+|   |             ├─docker-compose-mysql.yml
+|   |             ├─docker-compose-node-controller.yml
+|   |             ├─docker-compose-prometheus.yml
+|   |             └docker-compose-server.yml
+|   ├─docker_compose
+|   |       ├─docker_compose_base.txt
+|   |       ├─docker_compose_demo.yml
+|   |       └docker_compose_install.txt
+├─database
+|    ├─mongodb
+|    |    ├─bakup_mongodb.txt
+|    |    └install_easy_mock.txt
+|    ├─base
+|    |  ├─database_base.sh
+|    |  ├─database_create.sh
+|    |  ├─database_database.sh
+|    |  ├─database_grant_privileges.sh
+|    |  ├─database_revoke_privileges.sh
+|    |  ├─jdbc_info.txt
+|    |  ├─sql大集合v1.sql
+|    |  ├─sql大集合v2.sql
+|    |  ├─sql执行详解.md
+|    |  └数据库索引.md
+|    ├─bakup_database
+|    |       ├─bakup_database_array.sh
+|    |       ├─bakup_database_docker.sh
+|    |       ├─bakup_database_sample.sh
+|    |       ├─database_synchronize_data.sh
+|    |       ├─database_synchronize_structure.sh
+|    |       └mysqldiff.sh
+├─ansible
+|    ├─ansible基础.md
+|    ├─ansible模块.md
+|    ├─files.yml
+|    ├─git.yml
+|    ├─playbook基础.md
+|    ├─synchronize.yml
+|    └user.yml

@@ -105,6 +105,7 @@
   - [【碎碎念】你说这是图啥呢](https://mp.weixin.qq.com/s/RZsEQNngZnQMmFb1-zf5jA)  
   - [【碎碎念】如果你也觉得人生好无聊，进来看看吧](https://mp.weixin.qq.com/s/jlOTN2aaZpak1Kl0dStiMg)  
   - [【碎碎念】三年前她是这样的...](https://mp.weixin.qq.com/s/BpKIEh4G9UF6zyVtjBScCQ)  
+  - [【碎碎念】为什么要《好好学习》？](https://mp.weixin.qq.com/s/rzgl6NyLnuhrGFV2WP0AWQ)
 
 #### 投资理财
   - [【投资理财】看，这小白菜多绿啊~](https://mp.weixin.qq.com/s/vb7trTy0s4rSSfEAbHsSvw)  
