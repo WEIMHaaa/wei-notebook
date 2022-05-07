@@ -65,7 +65,7 @@ LIMIT <limit_number>
 ### 六、sql执行计划explain
 通过explain这个命令来查看一个这些SQL语句的执行计划。查看该SQL语句有没有使用上了索引，有没有做全表扫描，这都可以通过explain命令来查看。
 
-![avater](../../docs/files/sql执行计划explain.png)
+![avater](../../../docs/files/sql执行计划explain.png)
 
 #### 概要描述：
 1. id：选择标识符
