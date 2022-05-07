@@ -46,6 +46,7 @@
   - [【Git系列】本地项目同时关联github和gitee](https://mp.weixin.qq.com/s/KNeVQWrp5dLdK7RXDGwEHg)  
 
 #### Java系列
+  - [【Java系列】crud工程师的swagger接口管理](https://mp.weixin.qq.com/s/btFInSxiw07PFa3BBnENFA)
   - [【Java系列】八大排序算法](https://mp.weixin.qq.com/s/MFdMgnxB0MHDX9SP3DecRQ)
 
 #### Jenkins系列

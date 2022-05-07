@@ -275,8 +275,8 @@ drop procedure if exists batch_data;
 create procedure batch_data()
 begin
 declare i int;
-  set i=7;
-  while(i<=8) do
+  set i=1;
+  while(i<=5) do
            insert into dbname.`t_table_info` (id, name, age, sex, job, json_set, create_time, update_time) values(i, concat('name',id), 1, '男', '律师', '{"uuid":"123"}', now(), now());
     set i=i+1; 
   end while;

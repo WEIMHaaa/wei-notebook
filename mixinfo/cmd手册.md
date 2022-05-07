@@ -27,4 +27,5 @@ tree [drive][path] [/F] [/A]
 3. treer -i <"文件名，支持正则表达式/regex/">  //-i 是忽略不需要的目录，多个文件用竖线 | 隔开,前后要用斜线 / 包括
 举例：
 treer -d D:\software\IdeaProjects\wei-notebook -e D:\software\IdeaProjects\wei-notebook\目录结构.txt -i "/.git|.idea|lib|公众号资料|README.md/"  
+treer -d D:\software\IdeaProjects\Learn-Java -e D:\software\IdeaProjects\Learn-Java\目录结构.txt -i "/.git|.idea|lib|公众号资料|README.md/"  
 
