@@ -107,6 +107,7 @@
   - [【数据库系列】环境治理之同步数据库](https://mp.weixin.qq.com/s/gefcEFnYDH4iWNsvKXG4DQ)  
 
 #### 碎碎念
+  - [【碎碎念】恍然大悟真的很妙](https://mp.weixin.qq.com/s/L4Fw-LuArh0epzbE-yj1mg)
   - [【碎碎念】你说这是图啥呢](https://mp.weixin.qq.com/s/RZsEQNngZnQMmFb1-zf5jA)  
   - [【碎碎念】如果你也觉得人生好无聊，进来看看吧](https://mp.weixin.qq.com/s/jlOTN2aaZpak1Kl0dStiMg)  
   - [【碎碎念】三年前她是这样的...](https://mp.weixin.qq.com/s/BpKIEh4G9UF6zyVtjBScCQ)  
