@@ -31,8 +31,7 @@
 ![](./docs/嘎嘎软件测试.png)  
 
 ### 4.2、联系我
-关于软件测试，如果有什么想法，可以加个xv(WMH182182)交流一下。
-![](./docs/我的微信.jpg)  
+关于软件测试，如果有什么想法，可以加个vx(WMH182182)交流一下。
 
 ### 4.3、[文章索引](https://mp.weixin.qq.com/s?__biz=MzkwODI2OTQ4Ng==&mid=2247484664&idx=1&sn=e7fd3c5bddcbea752b75cd5806f7861a&chksm=c0cdc639f7ba4f2f6c4f8d110a2531b81db49819c514a2cd48c81e09ec4af6e7f136144946b9&token=1173117238&lang=zh_CN#rd)
 #### Docker系列
