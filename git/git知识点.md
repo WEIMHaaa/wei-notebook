@@ -53,7 +53,7 @@ git log
 3. 撤销已经push的commit  
 1、git log拿到要回退的版本号：3d0c40d40074a2ba0c4756d7d1697983c398bd0f  
 2、git reset –-soft <版本号> ，如 git reset --soft 3d0c40d40074a2ba0c4756d7d1697983c398bd0f ，重置至指定版本的提交，达到撤销提交的目的；回退本地代码：git reset --hard <版本号>  
-3、git push origin master –-force ，强制提交当前版本号  
+3、git push origin master --force ，强制提交当前版本号  
 问题：当我们有时候回滚了代码，想强制push到远程仓库的时候，git push origin --force，会报如下错误：You are not allowed to force push code to a protected branch on this project  
 解决：如果用的是gitlab版本库，这说明gitlab对仓库启用了保护，需要在仓库中设置一下：进入项目gitlab网页版: 设置（setting）> 版本库（repo）> 保护分支（把保护的分支选择 unprotected）
 
