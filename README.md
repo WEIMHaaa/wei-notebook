@@ -1,23 +1,29 @@
+[TOC]
+
 <h1 align = "center">好好学习, 天天向上</h1>
-这是一个努力在建设自己人生体系的呱呱大王，包含但不局限于测试体系，知识体系，笔记体系等。带你见证呱呱本呱成长为参天大呱。  
+<h3 align = "center">这是一个努力建设知识体系的呱呱大王</h3>
 
+---
 
-## 1、项目地址
+## 1、项目简介
+- wei-notebook  
+  - 项目说明：包含 ansible，mysql，docker，git，jenkins，jmeter，linux，shell，pipeline，中间件：dubbo、 kafka、nginx、nodejs、redis、rocketmq、zookeeper，计算机网络，操作系统等知识总结。
+  - https://github.com/WEIMHaaa/wei-notebook.git
+  - https://gitee.com/weimenghua/wei-notebook.git
 - Learn-Java
+  - 项目说明：学习Java和vue的项目，包含Java基础，SpringBoot，Vue等。
   - https://github.com/WEIMHaaa/Learn-Java.git  
   - https://gitee.com/weimenghua/Learn-Java.git
 - Learn-Python
+  - 项目说明：学习Python的项目，包含Python基础，pytest，unitest，selenium等测试框架。
   - https://github.com/WEIMHaaa/Learn-Python.git
   - https://gitee.com/weimenghua/Learn-Python.git
-- wei-notebook
-  - https://github.com/WEIMHaaa/wei-notebook.git
-  - https://gitee.com/weimenghua/wei-notebook.git  
-
+ 
   
-## 2、测试体系建设
-在线地址：[测试体系建设](https://www.processon.com/view/link/615eae81e0b34d06f3dcdf4b)  
-本地文件：[./docs/测试体系建设.xmind](./docs/测试体系建设.xmind)  
-![](./docs/测试体系建设.jpg)  
+## 2、测试工程师技能图谱
+在线地址：[测试工程师技能图谱](https://www.processon.com/view/link/615eae81e0b34d06f3dcdf4b)  
+本地文件：[./docs/测试工程师技能图谱.xmind](./docs/测试工程师技能图谱.xmind)  
+![](./docs/测试工程师技能图谱.jpg)  
 
 
 ## 3、质量保障体系建设
@@ -26,15 +32,17 @@
 ![](./docs/质量保障体系建设.png)
 
 
-## 4、公众号
-### 4.1、嘎嘎软件测试
+## 4、联系作者
+关于软件测试，如果有什么想法，可以加个vx交流一下。
+![](./docs/联系作者.jpg)
+
+
+## 5、公众号
+### 5.1、嘎嘎软件测试
 ![](./docs/嘎嘎软件测试.png)  
 
-### 4.2、联系我
-关于软件测试，如果有什么想法，可以加个微信交流一下。
-![](./docs/我的微信.jpg)  
 
-### 4.3、[文章索引](https://mp.weixin.qq.com/s?__biz=MzkwODI2OTQ4Ng==&mid=2247484664&idx=1&sn=e7fd3c5bddcbea752b75cd5806f7861a&chksm=c0cdc639f7ba4f2f6c4f8d110a2531b81db49819c514a2cd48c81e09ec4af6e7f136144946b9&token=1173117238&lang=zh_CN#rd)
+### 5.2、[文章索引](https://mp.weixin.qq.com/s?__biz=MzkwODI2OTQ4Ng==&mid=2247484664&idx=1&sn=e7fd3c5bddcbea752b75cd5806f7861a&chksm=c0cdc639f7ba4f2f6c4f8d110a2531b81db49819c514a2cd48c81e09ec4af6e7f136144946b9&token=1173117238&lang=zh_CN#rd)
 #### Docker系列
   - [【Docker系列】docker-compose一步帮你搞定n个容器](https://mp.weixin.qq.com/s/mF3JvSbYByHpv0ToV0XglA)  
   - [【Docker系列】镜像and容器基本操作](https://mp.weixin.qq.com/s/8ygeEwgeli4_fzMm4jJhNA)  
