@@ -67,5 +67,14 @@ drop：删除当前commit(drop和fixup的区别是啥？)
 
 
 ### git stash
-git status：可以判断当前文件所属位置, 命令用于查看在上次提交之后是否有对文件进行再次修改
-在A分支修改文件, 但不想commit, 使用git stash, git checkout B分支之后, 修改的文件并不会带到B分支, 再git checkout A分支, 使用git stash pop找出来。
+1. stash的原理：将本地没提交的内容(git commit的内容不会被缓存, 但git add的内容会被缓存)进行缓存并从当前分支移除，缓存的数据结构为堆栈，先进后出。  
+2. 场景：在A分支修改文件, 但不想commit, 使用git stash, git checkout B分支之后, 修改的文件并不会带到B分支, 再git checkout A分支, 使用git stash pop找出来。
+3. stash的参数详解：
+- git stash与git stash save是一样的, 将没有提交的内容缓存并移除，而这条缓存名称为最新一次提交的commit -m的内容，如果没有本地提交则是拉远程仓库是的commit内容。
+- git stash save "xxx"：加上自己的注解进行缓存。
+- git stash list：返回缓存的列表。
+- git stash pop：将堆栈中最新的内容pop出来应用到当前分支上，且会删除堆中的记录。
+- git stash drop [名]：删除单个缓存 举例git stash drop stash@{0}。
+- git stash clear：全清。
+- git stash show [名]：显示与当前分支差异 举例git stash show stash@{0} 加上-p可以看详细差异。
+- git stash branch：指定或最新缓存创建分支。
