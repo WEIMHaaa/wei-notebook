@@ -19,3 +19,6 @@
 
 7. 主机执行目标机器上的脚本  
   ansible hosts_name -m shell -a "sh /tmp/demo.sh"
+
+8. 同步文件 delete=yes: 全量同步, 保持2边数据一致; 不加则增量同步
+  ansible hosts_name -m synchronize -a "src=/tmp/ dest=/tmp/ delete=yes"

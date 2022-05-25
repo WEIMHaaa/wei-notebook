@@ -1,3 +1,4 @@
+### sonar搭建
 1. 安装sonar插件
 2. 系统设置->全局设置->SonarQube Scanner指定sonar的安装位置：/home/sonar/scanner
 3. 系统设置->配置->SonarQube servers执行sonar的URL

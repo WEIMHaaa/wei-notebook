@@ -81,6 +81,11 @@ Markdown自动生成目录
 方法一 ：在文章的最顶端输入 [toc] 即可(在Typora可以, 在IDEA需使用方法二)  
 方法二 ：npm install doctoc -g, 切换到对应目录执行：执行 doctoc Markdwon教程.md 文件
 
+```
+多行代码
+```
+行内代码`行内代码`
+
 IDEA设置Markdown样式和Typora一样：File > Settings > Languages & Frameworks > Markdown > Custom CSS 添加如下脚本：
 ```
 body {
