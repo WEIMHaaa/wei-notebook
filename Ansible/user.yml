@@ -1,6 +1,7 @@
 #ansible user模块：创建目录，将目录设置所属人和所属组
 #执行命令：ansible-playbook user.yaml --extra-vars "user=myname uid=666 group=mygroup"
 
+---
 - hosts: localhost
   tasks:
     - name: create deploy user

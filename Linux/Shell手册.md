@@ -45,10 +45,12 @@ do
 echo "${value}"  
 done  
 
+
 ### 软链接
 ln -s file1 lnk1    #创建一个指向文件或目录的软链接
 ln -s /data/.jenkins/bak_workspace bak_jenkins_workspace    #举例：在目标文件所在路径下：ln -s 源文件或目录 目标文件或目录(lnk1|目标文件或目录件：无需新建)
 ln file1 lnk1   #创建一个指向文件或目录的物理链接
+
 
 ### 2>&1 重定向  
 nohup command>/dev/null 2>&1 &  
@@ -58,6 +60,7 @@ nohup command>/dev/null 2>&1 &
 - 1 表示stdout标准输出
 - 2 表示stderr标准错误
 - & 表示把该命令以后台的job的形式运行
+
 
 ### shell反斜杠拼成一行  
 ./configure \  

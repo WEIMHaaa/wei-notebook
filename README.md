@@ -1,13 +1,13 @@
 [TOC]
 
-<h1 align = "center">好好学习, 天天向上</h1>
-<h3 align = "center">这是一个努力建设知识体系的呱呱大王</h3>
+<h1 style="text-align:center">好好学习, 天天向上</h1>
+<h3 style="text-align:center">这是一个努力建设知识体系的呱呱大王</h3>
 
 ---
 
 ## 1、项目简介
 - wei-notebook  
-  - 项目说明：包含 ansible，mysql，docker，git，jenkins，jmeter，linux，shell，pipeline，中间件：dubbo、 kafka、nginx、nodejs、redis、rocketmq、zookeeper，计算机网络，操作系统等知识总结。
+  - 项目说明：包含 Ansible，MySQL，Docker，Git，Jenkins，JMeter，Linux，Shell，Pipeline，中间件：Dubbo、 Kafka、Nginx、nodejs、Redis、RocketMQ、Zookeeper 等总结。
   - https://github.com/WEIMHaaa/wei-notebook.git
   - https://gitee.com/weimenghua/wei-notebook.git
 - Learn-Java

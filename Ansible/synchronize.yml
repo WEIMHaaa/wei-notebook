@@ -1,7 +1,7 @@
 #ansible synchronize模块：同步文件
 #ansible-playbook synchronize.yml --extra-vars "hosts=jenkins-node" #注: delete: yes 先清空再同步
 
-
+---
 - name: "synchronize files"
   hosts: '{{ hosts }}'
   tasks:

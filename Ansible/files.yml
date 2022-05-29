@@ -1,6 +1,7 @@
 #ansible file模块：创建目录，将目录设置所属人和所属组
 #ansible-playbook files.yaml --extra-vars "deploy_user_name=user_name deploy_service_name=service_name uid=666 deploy_user_group=group_name"
 
+---
 - name: "mkdir file"
 - hosts: localhost
   tasks:
