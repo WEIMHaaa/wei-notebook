@@ -2,6 +2,23 @@
 
 ---
 
+### Ansible简介
+ansible是自动化运维工具，基于Python开发，集合了众多运维工具（puppet、cfengine、chef、func、fabric）的优点，实现了批量系统配置、批量程序部署、批量运行命令等功能。
+ansible是基于模块工作的，本身没有批量部署的能力。真正具有批量部署的是ansible所运行的模块，ansible只是提供一种框架。主要包括：  
+(1) 连接插件connection plugins：负责和被监控端实现通信  
+(2) host inventory：指定操作的主机，是一个配置文件里面定义监控的主机  
+(3) 各种模块核心模块、command模块、自定义模块  
+(4) 借助于插件完成记录日志邮件等功能  
+(5) playbook：剧本执行多个任务时，非必需可以让节点一次性运行多个任务  
+
+
+### Ansible搭建
+1. ansible的安装来源于epel仓库，因此在安装前需确保安装了正确的epel源：yum install -y epel-release
+2. 安装ansible命令：yum install ansible -y
+3. 查看ansible是否安装：rpm -qa |grep ansible ，whereis ansible
+4. 查看ansible安装信息：ansible --version
+
+
 ### Ansible模块
 1. command模块：命令操作
 2. copy模块：拷贝文件和目录
@@ -16,22 +33,20 @@
 
 ### Ansible基础
 1. 检查ansible主机是否连通目标机器  
-ansible -m ping <hosts_name>
+  ansible -m ping <hosts_name>
 
 2. ansible在目标机器上面执行shell命令  
-ansible <hosts_name> -m shell -a "cd /tmp && ls -l;"
+  ansible <hosts_name> -m shell -a "cd /tmp && ls -l;"
+  ansible <hosts_name> -m shell -a "sh /tmp/demo.sh"
 
 3. 查看组清单  
-ansible <hosts_name> --list-hosts  
+  ansible <hosts_name> --list-hosts  
 
-4. 主机发送文件到目标机器    
-ansible <hosts_name> -m copy -a "src=/tmp/demo.sh dest=/tmp/"
+4. ansible主机发送文件到目标机器    
+  ansible <hosts_name> -m copy -a "src=/tmp/demo.sh dest=/tmp/"
 
-5. 主机执行目标机器上的脚本  
-ansible <hosts_name> -m shell -a "sh /tmp/demo.sh"
-
-6. 同步文件 delete=yes: 全量同步, 保持2边数据一致; 不加则增量同步
-ansible <hosts_name> -m synchronize -a "src=/tmp/ dest=/tmp/ delete=yes"
+5. 同步文件 delete=yes: 全量同步, 保持2边数据一致; 不加则增量同步
+  ansible <hosts_name> -m synchronize -a "src=/tmp/ dest=/tmp/ delete=yes"
 
 
 ### playbook基础
@@ -45,10 +60,14 @@ playbooks使用yaml语法，在ansible中几乎所有的yaml文件都是以list�
 - 缩进只能使用空格，不能使用tab
 
 1. 执行yml（不带参数）  
-ansible-playbook demo.yaml
+  ansible-playbook demo.yaml
 
 2. 执行yml（带参数）  
-ansible-playbook demo.yaml --extra-vars "user=user_name uid=666 group=group_name"
+  ansible-playbook demo.yaml --extra-vars "user=user_name uid=666 group=group_name"
 
 3. 检查playbook  
-ansible-playbook -C playbook-demo.yml
+  ansible-playbook -C playbook-demo.yml
+
+
+### Ansible踩坑
+ansible脚本中的参数不能带-

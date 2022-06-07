@@ -1,3 +1,4 @@
+```
 ${__time(yyyyMMddHHmmss,time)}
 ${__Random(100000,999999,)}
 
@@ -20,3 +21,4 @@ String[] str= new String[]{"1", "2", "3", "Z"};
 int a = random.nextInt(str.length);
 vars.put("idType",str[a]);
 log.info("随机字符:" + str[a]);
+```

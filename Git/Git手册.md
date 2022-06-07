@@ -2,6 +2,14 @@
 
 ---
 
+### Git工作流程
+![](./img/git_workflow.png)
+1. Workspace：工作区
+2. Index / Stage：暂存区
+3. Repository：仓库区（或本地仓库）
+4. Remote：远程仓库
+
+
 ### Git知识点
 1. repository
 2. config
