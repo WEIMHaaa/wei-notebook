@@ -93,6 +93,7 @@
   - [【接口测试】JMeter强化神器beanshell](https://mp.weixin.qq.com/s/DKPtUf7M42h4-It2yURPpA)  
   - [【接口测试】神器JMeter](https://mp.weixin.qq.com/s/mFjg3Spwv2snsz-12yQ08A)  
   - [【接口测试】JMeter参数化](https://mp.weixin.qq.com/s/8LMlc54lmdlrcUGOPIyIHw)  
+  - [【接口测试】JMeter测试WebSocket接口](https://mp.weixin.qq.com/s/65kzy2FL4cxSwc4fwz14NQ)
 
 #### 金融风控
   - [【金融风控】风控基础总结](https://mp.weixin.qq.com/s/NoDITA9TtOePzR-KGCIGBQ)  
