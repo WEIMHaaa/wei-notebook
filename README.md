@@ -72,6 +72,7 @@
 
 #### Python系列
   - [【Python系列】pytest自动化测试框架](https://mp.weixin.qq.com/s/dKgvH8igE9sjtsu91hxpdw)  
+  - [【Python系列】为啥老问装饰器、迭代器、生成器？](https://mp.weixin.qq.com/s/8WxDiqZ48bo0ymNG5d4oew)  
 
 #### Redis系列
   - [【Redis系列】Java使用Redis](https://mp.weixin.qq.com/s/lXCxdE9lEah9XautS315vQ)  
