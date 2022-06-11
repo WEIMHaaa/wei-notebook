@@ -122,6 +122,7 @@
   - [【碎碎念】如果你也觉得人生好无聊，进来看看吧](https://mp.weixin.qq.com/s/jlOTN2aaZpak1Kl0dStiMg)  
   - [【碎碎念】三年前她是这样的...](https://mp.weixin.qq.com/s/BpKIEh4G9UF6zyVtjBScCQ)  
   - [【碎碎念】为什么要《好好学习》？](https://mp.weixin.qq.com/s/rzgl6NyLnuhrGFV2WP0AWQ)
+  - [【碎碎念】无为而治](https://mp.weixin.qq.com/s/-9FGqv1Kjx09eF6WK66CbQ)
   - [【碎碎念】一个人吃烤肉](https://mp.weixin.qq.com/s/sf3I-ASODotshOLrEzd7Tw)
 
 #### 投资理财
