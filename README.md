@@ -1,7 +1,7 @@
 [TOC]
 
-<h1 style="text-align:center">好好学习, 天天向上</h1>
-<h3 style="text-align:center">这是一个努力建设知识体系的呱呱大王</h3>
+<h1 align = "center">好好学习, 天天向上</h1>
+<h3 align = "center">这是一个努力建设知识体系的呱呱大王</h3>
 
 ---
 

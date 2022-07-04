@@ -94,36 +94,36 @@
 
 ### git fetch和git pull的区别
 1. 相同点
-首先在作用上他们的功能是大致相同的, 都是起到了更新代码的作用。
+  首先在作用上他们的功能是大致相同的, 都是起到了更新代码的作用。
 
 2. 不同点
 - git fetch：git fetch会将数据拉取到本地仓库, 它并不会自动合并或修改当前的工作。 
 - git pull：git pull是从远程获取最新版本并merge到本地, 会自动合并或修改当前的工作。
 
 
-### Git回退代码
+### git回退代码
 1. 查看commits记录：
-git reflog
+  git reflog
 
 2. 查看commits记录(详细)：
-git log
+  git log
 
 3. 撤销已经push的commit  
-1、git log拿到要回退的版本号：3d0c40d40074a2ba0c4756d7d1697983c398bd0f  
-2、git reset –-soft <版本号> , 如 git reset --soft 3d0c40d40074a2ba0c4756d7d1697983c398bd0f , 重置至指定版本的提交, 达到撤销提交的目的；回退本地代码：git reset --hard <版本号>  
-3、git push origin master --force , 强制提交当前版本号  
-问题：当我们有时候回滚了代码, 想强制push到远程仓库的时候, git push origin --force, 会报如下错误：You are not allowed to force push code to a protected branch on this project  
-解决：如果用的是gitlab版本库, 这说明gitlab对仓库启用了保护, 需要在仓库中设置一下：进入项目gitlab网页版: 设置（setting）> 版本库（repo）> 保护分支（把保护的分支选择 unprotected）
+  1、git log拿到要回退的版本号：3d0c40d40074a2ba0c4756d7d1697983c398bd0f  
+  2、git reset –-soft <版本号> , 如 git reset --soft 3d0c40d40074a2ba0c4756d7d1697983c398bd0f , 重置至指定版本的提交, 达到撤销提交的目的；回退本地代码：git reset --hard <版本号>  
+  3、git push origin master --force , 强制提交当前版本号  
+  问题：当我们有时候回滚了代码, 想强制push到远程仓库的时候, git push origin --force, 会报如下错误：You are not allowed to force push code to a protected branch on this project  
+  解决：如果用的是gitlab版本库, 这说明gitlab对仓库启用了保护, 需要在仓库中设置一下：进入项目gitlab网页版: 设置（setting）> 版本库（repo）> 保护分支（把保护的分支选择 unprotected）
 
 4. 合并commit
-git rebase进行git压缩：git rebase -i HEAD~2 对最近的3个commit进行rebase操作  
-对于 commit 合并可以使用 squash、fixup 指令,   
-squash：将该commit的注释添加到上一个commit注释中  
-fixup：是放弃当前commit的注释  
-drop：删除当前commit(drop和fixup的区别是啥？)  
+  git rebase进行git压缩：git rebase -i HEAD~2 对最近的3个commit进行rebase操作  
+  对于 commit 合并可以使用 squash、fixup 指令,   
+  squash：将该commit的注释添加到上一个commit注释中  
+  fixup：是放弃当前commit的注释  
+  drop：删除当前commit(drop和fixup的区别是啥？)  
 
 
-### Git stash
+### git stash
 1. stash的原理：将本地没提交的内容(git commit的内容不会被缓存, 但git add的内容会被缓存)进行缓存并从当前分支移除，缓存的数据结构为堆栈，先进后出。  
 2. 场景：在A分支修改文件, 但不想commit, 使用git stash, git checkout B分支之后, 修改的文件并不会带到B分支, 再git checkout A分支, 使用git stash pop找出来。
 3. stash的参数详解：
@@ -135,3 +135,12 @@ drop：删除当前commit(drop和fixup的区别是啥？)
 - git stash clear：全清。
 - git stash show [名]：显示与当前分支差异 举例git stash show stash@{0} 加上-p可以看详细差异。
 - git stash branch：指定或最新缓存创建分支。
+
+
+### git rebase 和 git merge 的区别
+1、rebase会把你当前分支的 commit 放到公共分支的最后面，所以叫变基。就好像你从公共分支又重新拉出来这个分支一样。
+举例：如果你从 master 拉了个feature分支出来，然后你提交了几个 commit，这个时候刚好有人把他开发的东西合并到 master 了，这个时候 master 就比你拉分支的时候多了几个 commit，如果这个时候你 rebase master 的话，就会把你当前的几个 commit，放到那个人 commit 的后面。
+2、merge 会把公共分支和你当前的commit 合并在一起，形成一个新的 commit 提交。
+使用场景：  
+个人开发，拉公共分支最新代码的时候使用rebase，好处是提交记录会比较简洁，缺点就是rebase以后不知道当前分支最早是从哪个分支拉出来的。  
+团队开发，往公共分支上合代码的时候，使用merge。但无论个人开发还是团队开发建议还是用merge。  
