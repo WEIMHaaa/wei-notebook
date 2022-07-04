@@ -59,3 +59,14 @@ Pod是Kubernetes创建或部署的最小/最简单的基本单位，一个Pod代
 11. kubectl exec <pod名称> date //在pod中执行命令
 12. kubectl describe pod <pod名称> //查看pod的详细状态
 13. kubectl top pod --all-namespaces //查看资源的cpu，内存磁盘等资源的使用率
+
+
+### 六、Kuboard教程
+[Kuboard教程](https://kuboard.cn/overview/)
+#### 简介
+Kuboard，是一款免费的 Kubernetes 图形化管理工具，Kuboard 力图帮助用户快速在 Kubernetes 上落地微服务。提供了丰富的功能，结合已有或新建的代码仓库、镜像仓库、CI/CD工具等，可以便捷的搭建一个生产可用的 Kubernetes 容器云平台，轻松管理和运行云原生应用。  
+
+样例：https://demo.kuboard.cn  
+用 户 demo  
+密 码 demo123
+![](./imgs/Kuboard-Demo.png)
