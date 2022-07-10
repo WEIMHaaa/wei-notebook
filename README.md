@@ -1,25 +1,29 @@
 [TOC]
 
-<h1 style="text-align:center">好好学习, 天天向上</h1>
-<h3 style="text-align:center">这是一个努力建设知识体系的呱呱大王</h3>
+<h1 align = "center">好好学习, 天天向上</h1>
+<p align = "center">这是一个努力建设知识体系的呱呱大王</p>
 
 ---
 
 ## 1、项目简介
-- wei-notebook  
-  - 项目说明：包含 Ansible，MySQL，Docker，Git，Jenkins，JMeter，Linux，Shell，Pipeline，中间件：Dubbo、 Kafka、Nginx、nodejs、Redis、RocketMQ、Zookeeper 等总结。
+- wei-notebook
+  - 项目说明：包含 Ansible，MySQL，Docker，Git，Jenkins，JMeter，Linux，Shell，Pipeline，中间件：Dubbo、 Kafka、Nginx、Nodejs、Redis、RocketMQ、Zookeeper 等总结。
   - https://github.com/WEIMHaaa/wei-notebook.git
   - https://gitee.com/weimenghua/wei-notebook.git
 - Learn-Java
-  - 项目说明：学习Java和vue的项目，包含Java基础，SpringBoot，Vue等。
-  - https://github.com/WEIMHaaa/Learn-Java.git  
+  - 项目说明：学习Java和前端的项目，包含Java基础，SpringBoot，React，Vue，TypeScript等。
+  - https://github.com/WEIMHaaa/Learn-Java.git
   - https://gitee.com/weimenghua/Learn-Java.git
 - Learn-Python
-  - 项目说明：学习Python的项目，包含Python基础，pytest，unitest，selenium等测试框架。
+  - 项目说明：学习Python的项目，包含Python基础，cypress，pytest，robotframework，selenium，unitest等测试框架。
   - https://github.com/WEIMHaaa/Learn-Python.git
   - https://gitee.com/weimenghua/Learn-Python.git
- 
+- Learn-Go
+  - 项目说明：学习Go的项目。
+  - https://github.com/WEIMHaaa/Learn-Go.git
+  - https://gitee.com/weimenghua/Learn-Go.git
   
+
 ## 2、测试工程师技能图谱
 在线地址：[测试工程师技能图谱](https://www.processon.com/view/link/615eae81e0b34d06f3dcdf4b)  
 本地文件：[./docs/测试工程师技能图谱.xmind](./docs/测试工程师技能图谱.xmind)  
